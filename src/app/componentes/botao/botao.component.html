@@ -1,0 +1,6 @@
+<button (click)="encontrarRepo()">gerar</button>
+<div>
+  <ul>
+    <li *ngFor="let repo of repoEncontrados"><a href="{{repo}}" target="_blank">{{repo}}</a></li>
+  </ul>
+</div>
