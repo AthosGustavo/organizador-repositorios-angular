@@ -1,24 +1,10 @@
-<app-nav-bar></app-nav-bar>
 
 <div class="d-flex flex-column align-items-center vh-100" style="margin-top: 100px;">
-  <!-- Foto centralizada -->
-  <img src="../../../assets/minha-foto .png" alt="Logo" class="img-fluid mb-4" style="height: 180px;">
-
-  <div style="width:500px">
-
-   <!-- Input e botão centralizados -->
-   <div class="input-group mb-3">
-     <input type="text" class="form-control" placeholder="Digite o nome de uma tecnologia" aria-label="Recipient's username" aria-describedby="button-addon2">
-     <button (click)="encontrarRepo()" class="btn btn-outline-secondary" type="button" id="button-addon2">Pesquisar</button>
-   </div>
-
-   <!-- Lista centralizada -->
    <div class="list-group list-group-flush">
      <ul class="list-group list-group-flush">
        <li class="list-group-item" *ngFor="let repo of repoEncontrados"><a href="{{repo.link}}" target="_blank">{{repo.nome}}</a></li>
      </ul>
    </div>
-  </div>
 </div>
 
 
