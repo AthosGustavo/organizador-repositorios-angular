@@ -33,6 +33,13 @@ export class CardComponent implements OnInit {
     let tecnologiaDigitada = this.input.value['tecnologia'];
     this.listaRepoEncontrados.length = 0;
 
+    if(tecnologiaDigitada == 'c#'){
+      tecnologiaDigitada = 'csharp'
+    }
+    if(tecnologiaDigitada == 'react'){
+      tecnologiaDigitada = 'reactjs'
+    }
+
     for(let i = 0; i < this.repositorios?.length;i++){
       const regex = new RegExp(`\\b${tecnologiaDigitada}\\b`, 'i');
       const resultado = regex.test(this.repositorios[i]["name"]);
