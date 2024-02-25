@@ -16,6 +16,6 @@ export class InputComponent implements OnInit{
   }
 
   pesquisarRepo():string{
-    return this.input.value('tecnologia');
+    return this.input.value.tecnologia;
   }
 }

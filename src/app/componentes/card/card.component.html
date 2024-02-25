@@ -1,0 +1,19 @@
+<div style="">
+
+  <div style="display:flex;justify-content: center;flex-direction: column;align-items: center;">
+    <img src="../../../assets/minha-foto .png" alt="Logo" class="img-fluid mb-4" style="height: 250px;">
+
+    <form [formGroup]="input"class="input-group mb-3">
+      <input formControlName="tecnologia" type="text" class="form-control" placeholder="Digite o nome de uma tecnologia" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button (click)="pesquisarRepo()" class="btn btn-outline-secondary" type="button" id="button-addon2">Pesquisar</button>
+    </form>
+
+    <div class="list-group list-group-flush">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let repo of listaRepoEncontrados"><a href="{{repo.link}}" target="_blank">{{repo.nome}}</a></li>
+      </ul>
+      <p *ngIf="repoNaoEncontrado">Repositório não encontrado.</p>
+    </div>
+
+  </div>
+</div>

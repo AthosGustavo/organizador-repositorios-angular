@@ -7,6 +7,7 @@ import { ListaRepositoriosComponent } from './componentes/lista-repositorios/lis
 import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
 import { InputComponent } from './componentes/input/input.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CardComponent } from './componentes/card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ListaRepositoriosComponent,
     NavBarComponent,
     InputComponent,
+    CardComponent,
 
   ],
   imports: [
